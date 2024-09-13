@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { linksType, HeaderProps } from "../../types/ui_types";
+import './Header.css';
 
 export default function Header({ links }: HeaderProps) {
   return (
