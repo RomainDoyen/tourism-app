@@ -7,3 +7,8 @@ export type linksType = {
 export type HeaderProps = {
   links: linksType[];
 };
+
+export type FooterProps = {
+  nameSite: string
+  copyright: string
+};
