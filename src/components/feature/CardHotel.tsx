@@ -1,21 +1,20 @@
 import data from '../../data/data.json';
+import './CardHotel.css';
 
 export default function CardHotel() {
   return (
-    <>
-      <div>
-        {
-          data.hotel.map((hotel, index) => (
-            <div key={index}>
-              <h1>{hotel.name}</h1>
-              <p>{hotel.description}</p>
-              <p>{hotel.address}</p>
-              <p>{hotel.phone}</p>
-              <img src={hotel.imageUrl} alt="image" />
-            </div>
-          ))
-        }
-      </div>
-    </>
+    <div className="card-container">
+      {data.hotel.map((hotel, index) => (
+        <div className="card" key={index}>
+          <img src={hotel.imageUrl} alt={hotel.name} />
+          <div className="card-content">
+            <h1>{hotel.name}</h1>
+            <p>{hotel.description}</p>
+            <p>{hotel.address}</p>
+            <p>{hotel.phone}</p>
+          </div>
+        </div>
+      ))}
+    </div>
   )
 }
