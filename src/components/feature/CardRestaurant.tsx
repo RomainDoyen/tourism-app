@@ -1,12 +1,16 @@
 import data from '../../data/data.json';
 // import './CardRestaurant.css';
+import Image from '../ui/Image';
 
 export default function CardRestaurant() {
   return (
     <div className="card-container">
       {data.resto.map((resto, index) => (
         <div className="card" key={index}>
-          <img src={resto.imageUrl} alt={resto.name} />
+          <Image 
+            src={resto.imageUrl} 
+            alt={resto.name} 
+          />
           <div className="card-content">
             <h1>{resto.name}</h1>
             <p>{resto.description}</p>
