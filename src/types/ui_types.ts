@@ -12,3 +12,8 @@ export type FooterProps = {
   nameSite: string
   copyright: string
 };
+
+export type ImageProps = {
+  src: string;
+  alt: string;
+};
