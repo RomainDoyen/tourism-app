@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Home from "./pages/Home"
 import CardHotel from "./components/feature/CardHotel"
+import CardRestaurant from "./components/feature/CardRestaurant";
 import Header from "./components/ui/Header";
 import Footer from "./components/ui/Footer";
 import { links } from "./routes/routes";
@@ -15,7 +16,7 @@ export function App() {
           <Route path="/events" element={<p>Événements</p>} />
           <Route path="/lodging" element={<CardHotel />} />
           <Route path="/history" element={<p>Histoire de la ville</p>} />
-          <Route path="/foodservice" element={<p>Restauration</p>} />
+          <Route path="/foodservice" element={<CardRestaurant />} />
           <Route path="*" element={<p>Page introuvable</p>} />
         </Routes>
         <Footer 
