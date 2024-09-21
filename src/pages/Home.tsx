@@ -32,7 +32,14 @@ export default function Home() {
           <CardRunSTRose />
         </div>
         <div className="map__list">
-
+          <ul>
+            <li>Mairie de Sainte Rose</li>
+            <li>Ravine Glissante</li>
+            <li>Eglise Notre Dame des Laves</li>
+            <li>Anse des Cascades</li>
+            <li>Forêt de Bois-Blanc</li>
+            <li>Pas de Bellecombe</li>
+          </ul>
         </div>
       </div>
     </div>

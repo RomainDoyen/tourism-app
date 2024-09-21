@@ -22,3 +22,7 @@
 .map__image polygon:hover {
   fill: #E7544A;
 }
+
+.map__list {
+  float: right;
+}
