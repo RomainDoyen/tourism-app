@@ -8,8 +8,10 @@
 
 .card-maps {
   width: 100%;
-  height: auto;
-  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; 
+  margin-top: 20px;
 }
 
 .map__image polygon {
@@ -24,5 +26,10 @@
 }
 
 .map__list {
+  width: 35%;
   float: right;
+}
+
+.highlighted {
+  color: #E7544A;
 }
