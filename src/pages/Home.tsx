@@ -1,5 +1,6 @@
 import Image from "../components/ui/Image";
 import "./Home.css";
+import CardRun from "../components/feature/CardRun";
 
 export default function Home() {
   return (
@@ -23,7 +24,12 @@ export default function Home() {
       </div>
       <div className="card-maps">
         <h2>Carte intéractive</h2>
-        
+        <div className="map__image">
+          <CardRun />
+        </div>
+        <div className="map__list">
+
+        </div>
       </div>
     </div>
   )
