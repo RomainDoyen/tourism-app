@@ -1,4 +1,4 @@
-import "./CardRun.css";
+import "./CardMap.css";
 
 export default function CardRun() {
   return (
