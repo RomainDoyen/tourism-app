@@ -1,6 +1,7 @@
 import Image from "../components/ui/Image";
 import "./Home.css";
 import CardRun from "../components/feature/CardRun";
+import CardRunSTRose from "../components/feature/CardRunSTRose";
 
 export default function Home() {
   return (
@@ -13,6 +14,9 @@ export default function Home() {
         />
         <div className="card-content">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique vitae temporibus corporis optio ea blanditiis in laudantium repellat possimus explicabo quod neque facere aspernatur distinctio harum fugit nulla, cumque modi?
+          <div className="map__image map-str">
+            <CardRun />
+          </div>
         </div>
       </div>
       <div className="image-section">
@@ -25,7 +29,7 @@ export default function Home() {
       <div className="card-maps">
         <h2>Carte intéractive</h2>
         <div className="map__image">
-          <CardRun />
+          <CardRunSTRose />
         </div>
         <div className="map__list">
 

@@ -2,6 +2,10 @@
   width: 100%;
 }
 
+.map-str.str {
+  fill: #E7544A;
+}
+
 .card-maps {
   width: 100%;
   height: auto;
