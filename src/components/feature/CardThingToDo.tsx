@@ -1,45 +1,62 @@
-import { useState } from "react";
+import { SetStateAction, useState } from "react";
+import Slider from "react-slick";
 import CardRunSTRose from "../feature/CardRunSTRose";
+import "./CardThingToDo.css";
+import { places } from "../../data/places";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function CardThingToDo() {
-
+  
   const [highlightedItem, setHighlightedItem] = useState<number | null>(null);
-
-  const city: string[] = [
-    "Mairie de Sainte Rose", 
-    "Ravine Glissante", 
-    "Eglise Notre Dame des Laves", 
-    "Anse des Cascades", 
-    "Forêt de Bois-Blanc", 
-    "Pas de Bellecombe"
-  ]
+  const [sliderRef, setSliderRef] = useState<Slider | null>(null);
 
   const handleMapHover = (index: number) => {
     setHighlightedItem(index);
+    if (sliderRef) {
+      sliderRef.slickGoTo(index);
+    }
+  };
+
+  const handleCardHover = (index: number) => {
+    setHighlightedItem(index);
+    if (sliderRef) {
+      sliderRef.slickGoTo(index);
+    }
+  };
+
+  const settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    adaptiveHeight: true,
+    afterChange: (current: SetStateAction<number | null>) => setHighlightedItem(current),
+    ref: (slider: SetStateAction<Slider | null>) => setSliderRef(slider),
   };
 
   return (
     <div className="card-container">
+      <h2>Carte interactive</h2>
       <div className="card-maps">
-        <h2>Carte interactive</h2>
         <div className="map__image">
-          <CardRunSTRose onMapHover={handleMapHover} />
+          <CardRunSTRose onMapHover={handleMapHover} highlightedItem={highlightedItem} />
         </div>
-        <div className="map__accordion">
-          {city.map((item, index) => (
-            <div key={index} className={`accordion-item ${highlightedItem === index ? 'open' : ''}`}>
-              <div className="accordion-header">
-                <h3>{item}</h3>
+        <Slider {...settings} className="carousel">
+          {places.map((place, index) => (
+            <div key={index} className="card">
+              <div className="card-header" onMouseEnter={() => handleCardHover(index)}>
+                <h3>{place.name}</h3>
               </div>
-              {highlightedItem === index && (
-                <div className="accordion-body">
-                  <p>Informations supplémentaires sur {item}. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-              )}
+              <div className="card-body">
+                <img src={place.image} alt={place.name} className="card-image" />
+                <p>{place.description}</p>
+              </div>
             </div>
           ))}
-        </div>
+        </Slider>
       </div>
     </div>
-  )
+  );
 }

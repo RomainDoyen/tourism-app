@@ -1,0 +1,72 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-maps {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.map__image {
+  flex: 1;
+  max-width: 40%;
+  margin-right: 20px;
+}
+
+.carousel {
+  flex: 1;
+  max-width: 40%;
+  margin-left: 20px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+}
+
+.card-header {
+  background-color: #504e4e;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.card-body {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: #f1f1f1;
+}
+
+.card-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.card.highlighted .card-header {
+  background-color: #E7544A;
+  color: white;
+}
+
+.map__image polygon.highlighted {
+  fill: #E7544A;
+}
+
+@media (max-width: 968px) {
+  .map__image, .carousel {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .card-maps {
+    flex-direction: column;
+    align-items: center;
+  }
+}
