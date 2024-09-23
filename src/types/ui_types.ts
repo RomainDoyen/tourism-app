@@ -18,3 +18,9 @@ export type ImageProps = {
   alt: string;
   className?: string;
 };
+
+export type TextProps = {
+  text: string
+  className?: string
+  style?: React.CSSProperties
+}

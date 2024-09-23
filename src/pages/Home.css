@@ -25,9 +25,14 @@
 .image-section {
   display: flex;
   justify-content: flex-end;
+  flex-direction: column;
   width: 450px;
-  height: 300px;
+  height: 450px;
   overflow: hidden;
+}
+
+.map-run {
+  height: 400px;
 }
 
 .half-circle-image {
