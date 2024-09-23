@@ -1,13 +1,14 @@
-import { SetStateAction, useState } from "react";
+import { useState } from "preact/hooks";
 import Slider from "react-slick";
 import CardRunSTRose from "../feature/CardRunSTRose";
 import "./CardThingToDo.css";
 import { places } from "../../data/places";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { SetStateAction } from "preact/compat";
 
 export default function CardThingToDo() {
-  
+
   const [highlightedItem, setHighlightedItem] = useState<number | null>(null);
   const [sliderRef, setSliderRef] = useState<Slider | null>(null);
 
@@ -34,6 +35,9 @@ export default function CardThingToDo() {
     adaptiveHeight: true,
     afterChange: (current: SetStateAction<number | null>) => setHighlightedItem(current),
     ref: (slider: SetStateAction<Slider | null>) => setSliderRef(slider),
+    dotsClass: "button__bar",
+    autoplay: true,
+    autoplaySpeed: 3000,
   };
 
   return (
@@ -45,7 +49,7 @@ export default function CardThingToDo() {
         </div>
         <Slider {...settings} className="carousel">
           {places.map((place, index) => (
-            <div key={index} className="card">
+            <div key={index} className="cardc">
               <div className="card-header" onMouseEnter={() => handleCardHover(index)}>
                 <h3>{place.name}</h3>
               </div>
