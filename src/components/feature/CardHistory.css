@@ -1,0 +1,23 @@
+.history-card {
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.history-title {
+  font-size: 1.8rem;
+  margin: 0;
+  color: #e7544a;
+}
+
+.history-description {
+  font-size: 1rem;
+  margin: 20px 0;
+  color: #a8a5a5;
+}
+
+.history-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px;
+}
