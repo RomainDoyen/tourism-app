@@ -2,7 +2,7 @@
   margin: auto;
   width: 300px; 
   height: 400px;
-  background-color: #5f5f5f;
+  background-color: #302f2f;
   border-radius: 1rem;
   padding: 0.5rem;
   color: #141417;
@@ -29,6 +29,10 @@
   height: 400px;
   object-fit: cover;
   border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.card__m_title, .card__icon {
+  color: #ffffff;
 }
 
 .card__hero .card__m_title {
@@ -67,15 +71,6 @@
   font-size: 0.875rem;
 }
 
-@media (min-width: 340px) {
-  .card__footer {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-  }
-}
-
 .card__summary {
   display: flex;
   justify-content: flex-start;
@@ -97,10 +92,31 @@
   background-color: #141417;
   color: #fff;
   font-size: 1rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.card__btn:hover {
+  background-color: #e7544a;
+}
+
+.card__icon {
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.card__icon:hover {
+  color: #e7544a;
 }
 
 @media (min-width: 340px) {
   .card__btn {
     width: max-content;
+  }
+
+  .card__footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
   }
 }
