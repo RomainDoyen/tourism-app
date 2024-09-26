@@ -96,5 +96,13 @@
       "description": "C’est à partir d’un débarcadère posté au bout d’une avancée de lave que se feront pendant longtemps les échanges entre Sainte Rose et l’extérieur. Les navires ancrés dans la rade étaient chargés et déchargés à l’aide d’embarcations plus légères.Cette activité maritime, se poursuivit jusqu’au début du 20ème siècle. En 1856, l’entreprise de batelage de la commune emploie 60 personnes pour ces activités de transbordement.Le déclin de La Marine fut sans aucun doute lié plus tard à l’avènement de deux éléments importants : l’apparition de la voie ferrée;et le développement du port de La Pointe des Galets.La construction du pont de La Rivière de l’Est permit également une orientation plus marquée vers l’usage de la voie terrestre. Dans une période relativement récente se trouvaient encore sur le site, voie d’acheminement des marchandises, magasins et établissement des douanes.",
       "description_photo": ""
     }
+  ],
+  "intro": [
+    {
+      "title": "Bienvenue à Sainte-Rose",
+      "para1": "Sainte-Rose est une commune située à l'Est de l'île de la Réunion qui est, tout comme Saint-Philippe, fortement marquée par le volcan - le Piton de la Fournaise. On ne pourra le louper tellement les coulées de laves qui ont dévalé les pentes de l'enclos sont nombreuses. Dotée d'une nature luxuriante, diversifiée et unique au monde, Sainte-Rose est une destination touristique hors du commun.",
+      "para2": "Même si les infrastructures touristiques y sont encore peu développées, la culture créole, les paysages sauvages, la nature préservée, en font un endroit à visiter absolument. Pour les locaux, Sainte-Rose dépayse et offre des activités agréables telles que ses imnombrables sites de pique-nique ou encore ses sentiers de randonnée (comme le sentier littoral qui emmenera les visiteurs à la découverte des richesses du bord de mer du sud sauvage).",
+      "para3": "La cuisine de l'Est de la Réunion, souvent à base de choux de vacoa ou encore du fameux pinpin est à l'honneur dans les restaurants et les différentes tables d'hôtes de la commune. Sainte-Rose abrite aussi différents ouvrages et monuments ayant marqués l'histoire de l'île de la Réunion, comme le pont de la rivière de l'Est ou l'église Notre Dame des Laves."
+    }
   ]
 }
