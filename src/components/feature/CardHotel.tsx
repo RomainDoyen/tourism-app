@@ -2,7 +2,7 @@ import data from '../../data/data.json';
 import Image from '../ui/Image';
 import { Bookmark } from 'lucide-react';
 import { Hotel } from 'lucide-react';
-import './CardHotel.css';
+import './Card.css';
 
 export default function CardHotel() {
   return (
@@ -24,12 +24,12 @@ export default function CardHotel() {
               </section>
 
               <footer class="card__footer">
-                <div class="card__job_summary">
-                  <div class="card__job_icon">
+                <div class="card__summary">
+                  <div class="card__icon">
                     <Hotel />
                   </div>
-                  <div class="card__job">
-                    <p class="card__job_title">
+                  <div class="card__m">
+                    <p class="card__m_title">
                       {hotel.name}
                     </p>
                   </div>

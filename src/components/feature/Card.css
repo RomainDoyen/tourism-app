@@ -31,7 +31,7 @@
   border-radius: 0.5rem 0.5rem 0 0;
 }
 
-.card__hero .card__job_title {
+.card__hero .card__m_title {
   margin: 2rem 0;
   font-size: 2rem;
   font-weight: 600;
@@ -76,7 +76,7 @@
   }
 }
 
-.card__job_summary {
+.card__summary {
   display: flex;
   justify-content: flex-start;
   align-items: center;

@@ -1,23 +1,43 @@
 import data from '../../data/data.json';
-// import './CardRestaurant.css';
 import Image from '../ui/Image';
+import { Bookmark } from 'lucide-react';
+import { Soup } from 'lucide-react';
+import './Card.css';
 
-export default function CardRestaurant() {
+export default function CardHotel() {
   return (
     <div className="card-container">
       {data.resto.map((resto, index) => (
-        <div className="card" key={index}>
-          <Image 
-            src={resto.imageUrl} 
-            alt={resto.name} 
-          />
-          <div className="card-content">
-            <h1>{resto.name}</h1>
-            <p>{resto.description}</p>
-            <p>{resto.address}</p>
-            <p>{resto.phone}</p>
-          </div>
-        </div>
+        <article class="card" key={index}>
+              <section class="card__hero">
+              <div class="card__hero_head">
+                <span>$150/hr</span>
+                <div class="card__icon">
+                  <Bookmark />
+                </div>
+              </div>
+              <Image 
+                  src={resto.imageUrl} 
+                  alt={resto.name} 
+                  className="card__image"
+                />
+              </section>
+
+              <footer class="card__footer">
+                <div class="card__summary">
+                  <div class="card__icon">
+                    <Soup />
+                  </div>
+                  <div class="card__m">
+                    <p class="card__m_title">
+                      {resto.name}
+                    </p>
+                  </div>
+                </div>
+
+                <button class="card__btn">voir</button>
+              </footer>
+        </article>
       ))}
     </div>
   )
