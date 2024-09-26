@@ -1,10 +1,22 @@
 import data from '../../data/data.json';
 import Image from '../ui/Image';
-import { Bookmark } from 'lucide-react';
-import { Hotel } from 'lucide-react';
+import { Bookmark, Hotel } from 'lucide-react';
+import Modal from './Modal';
+import { useState } from 'preact/hooks';
 import './Card.css';
 
 export default function CardHotel() {
+
+  const [selectedHotel, setSelectedHotel] = useState<null | typeof data.hotel[0]>(null);
+
+  const handleModalOpen = (hotel: typeof data.hotel[0]) => {
+    setSelectedHotel(hotel);
+  };
+
+  const handleModalClose = () => {
+    setSelectedHotel(null);
+  };
+
   return (
     <div className="card-container">
       {data.hotel.map((hotel, index) => (
@@ -35,10 +47,14 @@ export default function CardHotel() {
                   </div>
                 </div>
 
-                <button class="card__btn">voir</button>
+                {/* <button class="card__btn">voir</button> */}
+                <button className="card__btn" onClick={() => handleModalOpen(hotel)}>voir</button>
               </footer>
         </article>
       ))}
+      {selectedHotel && (
+        <Modal hotel={selectedHotel} onClose={handleModalClose} />
+      )}
     </div>
   )
 }
