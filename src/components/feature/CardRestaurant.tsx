@@ -1,10 +1,22 @@
 import data from '../../data/data.json';
 import Image from '../ui/Image';
-import { Bookmark } from 'lucide-react';
-import { Soup } from 'lucide-react';
+import { Bookmark, Soup } from 'lucide-react';
+import Modal from './Modal';
+import { useState } from 'preact/hooks';
 import './Card.css';
 
-export default function CardHotel() {
+export default function CardRestaurant() {
+
+  const [selectedResto, setSelectedResto] = useState<null | typeof data.resto[0]>(null);
+
+  const handleModalOpen = (resto: typeof data.resto[0]) => {
+    setSelectedResto(resto);
+  };
+
+  const handleModalClose = () => {
+    setSelectedResto(null);
+  };
+
   return (
     <div className="card-container">
       {data.resto.map((resto, index) => (
@@ -35,10 +47,13 @@ export default function CardHotel() {
                   </div>
                 </div>
 
-                <button class="card__btn">voir</button>
+                <button className="card__btn" onClick={() => handleModalOpen(resto)}>voir</button>
               </footer>
         </article>
       ))}
+      {selectedResto && (
+        <Modal establishment={selectedResto} onClose={handleModalClose} />
+      )}
     </div>
   )
 }

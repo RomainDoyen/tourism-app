@@ -47,13 +47,12 @@ export default function CardHotel() {
                   </div>
                 </div>
 
-                {/* <button class="card__btn">voir</button> */}
                 <button className="card__btn" onClick={() => handleModalOpen(hotel)}>voir</button>
               </footer>
         </article>
       ))}
       {selectedHotel && (
-        <Modal hotel={selectedHotel} onClose={handleModalClose} />
+        <Modal establishment={selectedHotel} onClose={handleModalClose} />
       )}
     </div>
   )
