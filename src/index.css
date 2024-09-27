@@ -34,3 +34,9 @@
   background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(19,19,22,1) 50%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#131316",GradientType=1);
 }
+
+@media (max-width: 768px) {
+  .card-container {
+    padding: 0px;
+  }
+}
