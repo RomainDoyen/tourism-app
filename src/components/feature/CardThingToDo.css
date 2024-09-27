@@ -5,6 +5,11 @@
   max-width: 1200px;
 }
 
+.title-cart {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .map__image {
   flex: 1;
   max-width: 40%;

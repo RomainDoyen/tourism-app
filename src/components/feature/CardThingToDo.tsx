@@ -42,7 +42,9 @@ export default function CardThingToDo() {
 
   return (
     <div className="card-container">
-      <h2>Carte interactive</h2>
+      <div className="title-cart">
+        <h2>Carte interactive</h2>
+      </div>
       <div className="card-maps">
         <div className="map__image">
           <CardRunSTRose onMapHover={handleMapHover} highlightedItem={highlightedItem} />
