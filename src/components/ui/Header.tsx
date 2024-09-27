@@ -1,12 +1,28 @@
 import { NavLink } from 'react-router-dom';
 import { linksType, HeaderProps } from "../../types/ui_types";
+import { useState } from 'preact/hooks';
 import './Header.css';
 
 export default function Header({ links }: HeaderProps) {
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  }
+
   return (
     <header>
       <nav>
-        <ul>
+        <div className="burger-menu">
+          <input type="checkbox" id="checkbox" checked={isMenuOpen} onChange={toggleMenu} />
+          <label htmlFor="checkbox" className="toggle">
+            <div className="bars" id="bar1"></div>
+            <div className="bars" id="bar2"></div>
+            <div className="bars" id="bar3"></div>
+          </label>
+        </div>
+        <ul className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
           {links.map((link: linksType, index: number) => (
             <li key={index}>
               <NavLink to={link.to} className={link.className}>
