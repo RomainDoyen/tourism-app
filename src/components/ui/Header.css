@@ -41,21 +41,35 @@ nav ul li {
 nav ul li a {
   color: #fff;
   text-decoration: none;
+  transition: color 0.5s ease 0s, background-color 0.5s ease 0s;
 }
 
-nav ul li a:hover {
+nav ul li a:not(.nav-active):hover {
   color: #E7544A;
+  background-color: transparent;
 }
 
 .nav-active {
-  color: #272121;
+  color: #fff;
   background-color: #E7544A;
   border-radius: 50px;
-  padding: 10px 15px 10px 15px;
+  padding: 10px 15px;
+  transition: background-color 0.5s ease 0s, color 0.5s ease 0s;
 }
 
-.nav-active:hover {
+nav ul li a.nav-active:hover {
   color: #fff;
+  background-color: #E7544A;
+}
+
+.logo {
+  position: absolute;
+  left: 0;
+  padding: 10px 20px;
+}
+
+.logo img {
+  width: 50px;
 }
 
 .burger-menu {
@@ -121,7 +135,7 @@ nav ul li a:hover {
   transform: rotate(180deg);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   .burger-menu {
     display: flex;
   }

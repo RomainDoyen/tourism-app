@@ -2,6 +2,7 @@ import { NavLink } from 'react-router-dom';
 import { linksType, HeaderProps } from "../../types/ui_types";
 import { useState } from 'preact/hooks';
 import './Header.css';
+import Image from './Image';
 
 export default function Header({ links }: HeaderProps) {
 
@@ -14,6 +15,9 @@ export default function Header({ links }: HeaderProps) {
   return (
     <header>
       <nav>
+        <div className="logo">
+          <Image src="./src/assets/proxy-image.png" alt="logo" />
+        </div>
         <div className="burger-menu">
           <input type="checkbox" id="checkbox" checked={isMenuOpen} onChange={toggleMenu} />
           <label htmlFor="checkbox" className="toggle">
