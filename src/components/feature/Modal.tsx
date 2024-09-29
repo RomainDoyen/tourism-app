@@ -1,4 +1,5 @@
 import { CircleX } from 'lucide-react';
+import Image from '../ui/Image';
 import './Modal.css';
 
 interface ModalProps {
@@ -12,7 +13,7 @@ interface ModalProps {
   onClose: () => void;
 }
 
-const Modal: React.FC<ModalProps> = ({ establishment, onClose }) => {
+export default function Modal ({ establishment, onClose }: ModalProps) {
   return (
     <div className="modal">
       <div className="modal-content">
@@ -22,7 +23,11 @@ const Modal: React.FC<ModalProps> = ({ establishment, onClose }) => {
         <div className="modal-body">
           <div className="modal-left">
             <h2 className="modal-header">{establishment.name}</h2>
-            <img src={establishment.imageUrl} alt={establishment.name} className="modal-image" />
+            <Image 
+              src={establishment.imageUrl} 
+              alt={establishment.name} 
+              className="modal-image" 
+            />
           </div>
           <div className="modal-right">
             <div className="modal-description">{establishment.description}</div>
@@ -35,4 +40,3 @@ const Modal: React.FC<ModalProps> = ({ establishment, onClose }) => {
   );
 };
 
-export default Modal;

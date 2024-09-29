@@ -6,6 +6,7 @@ import { places } from "../../data/places";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { SetStateAction } from "preact/compat";
+import Image from "../ui/Image";
 
 export default function CardThingToDo() {
 
@@ -47,7 +48,10 @@ export default function CardThingToDo() {
       </div>
       <div className="card-maps">
         <div className="map__image">
-          <CardRunSTRose onMapHover={handleMapHover} highlightedItem={highlightedItem} />
+          <CardRunSTRose 
+            onMapHover={handleMapHover} 
+            highlightedItem={highlightedItem} 
+          />
         </div>
         <Slider {...settings} className="carousel">
           {places.map((place, index) => (
@@ -56,7 +60,11 @@ export default function CardThingToDo() {
                 <h3>{place.name}</h3>
               </div>
               <div className="card-body">
-                <img src={place.image} alt={place.name} className="card-image" />
+                <Image 
+                  src={place.image} 
+                  alt={place.name} 
+                  className="card-image" 
+                />
                 <p>{place.description}</p>
               </div>
             </div>
