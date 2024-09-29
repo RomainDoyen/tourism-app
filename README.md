@@ -1,5 +1,7 @@
 # S3#1 competition: Create and code a city's website.
 
+Ecole du Web’ competition. 
+
 ## Stack used
 
 - Vite
