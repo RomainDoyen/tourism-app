@@ -3,6 +3,7 @@ import Image from '../ui/Image';
 import { Bookmark, Hotel } from 'lucide-react';
 import Modal from './Modal';
 import { useState } from 'preact/hooks';
+import Button from '../ui/Button';
 import './Card.css';
 
 export default function CardHotel() {
@@ -21,34 +22,38 @@ export default function CardHotel() {
     <div className="card-container">
       {data.hotel.map((hotel, index) => (
         <article class="card" key={index}>
-              <section class="card__hero">
-              <div class="card__hero_head">
-                <span>$150/hr</span>
-                <div class="card__icon">
-                  <Bookmark />
-                </div>
+          <section class="card__hero">
+            <div class="card__hero_head">
+              <span>$150/hr</span>
+              <div class="card__icon">
+                <Bookmark />
               </div>
-              <Image 
-                  src={hotel.imageUrl} 
-                  alt={hotel.name} 
-                  className="card__image"
-                />
-              </section>
+            </div>
+            <Image 
+              src={hotel.imageUrl} 
+              alt={hotel.name} 
+              className="card__image"
+            />
+          </section>
 
-              <footer class="card__footer">
-                <div class="card__summary">
-                  <div class="card__icon">
-                    <Hotel />
-                  </div>
-                  <div class="card__m">
-                    <p class="card__m_title">
-                      {hotel.name}
-                    </p>
-                  </div>
-                </div>
+          <footer class="card__footer">
+            <div class="card__summary">
+              <div class="card__icon">
+                <Hotel />
+              </div>
+              <div class="card__m">
+                <p class="card__m_title">
+                  {hotel.name}
+                </p>
+              </div>
+            </div>
 
-                <button className="card__btn" onClick={() => handleModalOpen(hotel)}>voir</button>
-              </footer>
+            <Button 
+              className="card__btn" 
+              onClick={() => handleModalOpen(hotel)} 
+              children={"voir"} 
+            />
+          </footer>
         </article>
       ))}
       {selectedHotel && (

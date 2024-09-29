@@ -24,3 +24,9 @@ export type TextProps = {
   className?: string
   style?: React.CSSProperties
 }
+
+export type ButtonProps = {
+  children?: string | JSX.Element;
+  className?: string;
+  onClick?: () => void;
+};

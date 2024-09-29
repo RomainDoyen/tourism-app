@@ -1,5 +1,6 @@
 import { CircleX } from 'lucide-react';
 import Image from '../ui/Image';
+import Button from '../ui/Button';
 import './Modal.css';
 
 interface ModalProps {
@@ -17,9 +18,11 @@ export default function Modal ({ establishment, onClose }: ModalProps) {
   return (
     <div className="modal">
       <div className="modal-content">
-        <button className="modal-close" onClick={onClose}>
-          <CircleX />
-        </button>
+        <Button 
+          className="modal-close" 
+          onClick={onClose}
+          children={<CircleX />}
+        />
         <div className="modal-body">
           <div className="modal-left">
             <h2 className="modal-header">{establishment.name}</h2>

@@ -9,7 +9,9 @@ export default function CardHistory() {
         <div key={index} className="history-card">
           <h1 className="history-title">{history?.title}</h1>
           {history.description.split('\n').map((line, lineIndex) => (
-            <p className="history-description" key={lineIndex}>{line}</p>
+            <p className="history-description" key={lineIndex}>
+              {line}
+            </p>
           ))}
           <Image 
             src={history?.description_photo} 
