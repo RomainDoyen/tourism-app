@@ -1,9 +1,5 @@
 import "./CardMap.css";
-
-interface CardRunSTRoseProps {
-  onMapHover: (index: number) => void;
-  highlightedItem: number | null;
-}
+import { CardRunSTRoseProps } from "../../types/feature_types";
 
 export default function CardRunSTRose({ onMapHover, highlightedItem }: CardRunSTRoseProps) {
   return (

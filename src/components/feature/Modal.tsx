@@ -1,18 +1,8 @@
 import { CircleX } from 'lucide-react';
 import Image from '../ui/Image';
 import Button from '../ui/Button';
+import { ModalProps } from '../../types/feature_types';
 import './Modal.css';
-
-interface ModalProps {
-  establishment: {
-    name: string;
-    imageUrl: string;
-    description: string;
-    address: string;
-    phone: string;
-  };
-  onClose: () => void;
-}
 
 export default function Modal ({ establishment, onClose }: ModalProps) {
   return (
