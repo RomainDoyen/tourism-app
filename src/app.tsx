@@ -4,6 +4,7 @@ import CardHotel from "./components/feature/CardHotel"
 import CardRestaurant from "./components/feature/CardRestaurant";
 import CardHistory from "./components/feature/CardHistory";
 import CardThingToDo from "./components/feature/CardThingToDo";
+import ErrorPage from "./pages/ErrorPage";
 import Header from "./components/ui/Header";
 import Footer from "./components/ui/Footer";
 import { links } from "./routes/routes";
@@ -19,7 +20,7 @@ export function App() {
           <Route path="/lodging" element={<CardHotel />} />
           <Route path="/history" element={<CardHistory />} />
           <Route path="/foodservice" element={<CardRestaurant />} />
-          <Route path="*" element={<p>Page introuvable</p>} />
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
         <Footer 
           nameSite="Tourism App" 
