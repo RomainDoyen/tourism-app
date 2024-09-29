@@ -2,6 +2,7 @@ import { NavLink } from 'react-router-dom';
 import { linksType, HeaderProps } from "../../types/ui_types";
 import { useState } from 'preact/hooks';
 import headerImage from '../../assets/proxy-image.png';
+import header from '../../assets/header.png';
 import './Header.css';
 import Image from './Image';
 
@@ -15,6 +16,7 @@ export default function Header({ links }: HeaderProps) {
 
   return (
     <header>
+      <Image src={header} alt="fond" className='logo-header' />
       <nav>
         <div className="logo">
           <Image src={headerImage} alt="logo" />
