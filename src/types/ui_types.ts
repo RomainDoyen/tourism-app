@@ -30,3 +30,19 @@ export type ButtonProps = {
   className?: string;
   onClick?: () => void;
 };
+
+export type CardProps = {
+  title: string;
+  imageUrl: string;
+  price: string;
+  icon: React.ReactNode;
+  establishment: {
+    name: string;
+    imageUrl: string;
+    description: string;
+    address: string;
+    phone: string;
+  };
+  onBookmarkClick?: () => void;
+  onButtonClick?: () => void;
+}
