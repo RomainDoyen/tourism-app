@@ -1,6 +1,9 @@
 import Image from "../components/ui/Image";
 import Text from "../components/ui/Text";
 import data from "../data/data.json";
+import image1 from "../assets/proxy-image.png";
+import image2 from "../assets/carte_reunion.png";
+import image3 from "../assets/1.png";
 import "./Home.css";
 
 export default function Home() {
@@ -11,7 +14,7 @@ export default function Home() {
     <div className="card-container">
       <div className="logo-section">
         <Image 
-          src="./src/assets/proxy-image.png"
+          src={image1}
           alt="logo"
           className="card-logo"
         />
@@ -22,7 +25,7 @@ export default function Home() {
           />
           <div className="map__image map-str">
             <Image 
-              src="./src/assets/carte_reunion.png"
+              src={image2}
               alt="Carte de la Réunion"
               className="map-run"
             />
@@ -35,7 +38,7 @@ export default function Home() {
       </div>
       <div className="image-section">
         <Image 
-          src="./src/assets/1.png"
+          src={image3}
           alt="Demi-cercle"
           className="half-circle-image"
         />
