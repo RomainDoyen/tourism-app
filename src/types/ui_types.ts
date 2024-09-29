@@ -31,18 +31,34 @@ export type ButtonProps = {
   onClick?: () => void;
 };
 
-export type CardProps = {
-  title: string;
+// export type CardProps = {
+//   title: string;
+//   imageUrl: string;
+//   price: string;
+//   icon: React.ReactNode;
+//   establishment: {
+//     name: string;
+//     imageUrl: string;
+//     description: string;
+//     address: string;
+//     phone: string;
+//   };
+//   onBookmarkClick?: () => void;
+//   onButtonClick?: () => void;
+// }
+
+export type Establishment = {
+  name: string;
   imageUrl: string;
-  price: string;
-  icon: React.ReactNode;
-  establishment: {
-    name: string;
-    imageUrl: string;
-    description: string;
-    address: string;
-    phone: string;
-  };
-  onBookmarkClick?: () => void;
-  onButtonClick?: () => void;
+  description: string;
+  address: string;
+  phone: string;
+}
+
+export type CardProps<T extends Establishment> = {
+  data: T[];
+  icon: JSX.Element;
+  onSelect: (item: T) => void;
+  getTitle: (item: T) => string;
+  getImageUrl: (item: T) => string;
 }
