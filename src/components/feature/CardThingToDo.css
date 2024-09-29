@@ -7,6 +7,7 @@
 
 .title-cart {
   position: absolute;
+  padding-top: 17px;
   top: 0px;
   left: 50%;
   transform: translateX(-50%);
@@ -18,6 +19,7 @@
   flex: 1;
   max-width: 40%;
   margin-right: 20px;
+  padding-top: 60px;
 }
 
 .carousel {
