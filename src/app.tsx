@@ -4,6 +4,7 @@ import CardHotel from "./components/feature/CardHotel"
 import CardRestaurant from "./components/feature/CardRestaurant";
 import CardHistory from "./components/feature/CardHistory";
 import CardThingToDo from "./components/feature/CardThingToDo";
+import CardEvent from "./components/feature/CardEvents";
 import ErrorPage from "./pages/ErrorPage";
 import Header from "./components/ui/Header";
 import Footer from "./components/ui/Footer";
@@ -16,7 +17,7 @@ export function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/thingstodo" element={<CardThingToDo />} />
-          <Route path="/events" element={<p>Événements</p>} />
+          <Route path="/events" element={<CardEvent />} />
           <Route path="/lodging" element={<CardHotel />} />
           <Route path="/history" element={<CardHistory />} />
           <Route path="/foodservice" element={<CardRestaurant />} />

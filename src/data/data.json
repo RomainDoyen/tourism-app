@@ -104,5 +104,87 @@
       "para2": "Même si les infrastructures touristiques y sont encore peu développées, la culture créole, les paysages sauvages, la nature préservée, en font un endroit à visiter absolument. Pour les locaux, Sainte-Rose dépayse et offre des activités agréables telles que ses imnombrables sites de pique-nique ou encore ses sentiers de randonnée (comme le sentier littoral qui emmenera les visiteurs à la découverte des richesses du bord de mer du sud sauvage).",
       "para3": "La cuisine de l'Est de la Réunion, souvent à base de choux de vacoa ou encore du fameux pinpin est à l'honneur dans les restaurants et les différentes tables d'hôtes de la commune. Sainte-Rose abrite aussi différents ouvrages et monuments ayant marqués l'histoire de l'île de la Réunion, comme le pont de la rivière de l'Est ou l'église Notre Dame des Laves."
     }
+  ],
+  "loisirs": [
+    {
+      "name": "Académie des Laves de Sainte-Rose",
+      "categories": "Activités : Culture",
+      "address": "Eclat - Maire de Sainte-Rose 97439 Sainte-Rose",
+      "phone": "",
+      "imageUrl": "/images/default-image.jpg",
+      "activity": ""
+    },
+    {
+      "name": "Ass. Des Retraités Militaires et Anciens Militaires De Sainte-Rose",
+      "categories": "Activités : ARMÉE (DONT PRÉPARATION MILITAIRE, MÉDAILLES), ANCIENS COMBATTANTS ( associations de militaires)",
+      "address": "16 Bis Petit Brûlé 97439 Sainte-Rose",
+      "phone": "",
+      "imageUrl": "/images/default-image.jpg",
+      "activity": ""
+    },
+    {
+      "name": "Association Animation du Port Sainte-Rose",
+      "categories": "Activités : Défense de droits fondamentaux, activités civiques...",
+      "address": "Cale à sec du Port de la Marine 97115 Sainte-Rose",
+      "phone": "",
+      "imageUrl": "https://static.neopse.com/medias/p/3075/site/1a/5f/30/1a5f3033f6a9f3af8660b11221c3623528325f84.jpg?v=v1",
+      "activity": ""
+    },
+    {
+      "name": "Association Arc-en-ciel",
+      "categories": "Activités : Danse",
+      "address": "56 Lot Leconte De Lisle 97439 Sainte-Rose",
+      "phone": "",
+      "imageUrl": "/images/default-image.jpg",
+      "activity": ""
+    },
+    {
+      "name": "Association Body Karaté de Sainte Rose Technique de karaté et danse",
+      "categories": "Activités : Sports, activités de plein air",
+      "address": "Apt 13 - 24 Rue des Flamboyants 97439 Sainte-Rose",
+      "phone": "+33 6 92 34 07 60",
+      "imageUrl": "/images/default-image.jpg",
+      "activity": ""
+    },
+    {
+      "name": "Association Culture Nouveaux Talents",
+      "categories": "Activités : Culture (chant, musique)",
+      "address": "6 Lot Florine A 97439 Sainte-Rose",
+      "phone": "+33 6 92 29 55 61",
+      "imageUrl": "/images/default-image.jpg",
+      "activity": ""
+    },
+    {
+      "name": "Association Des Pêcheurs Professionnels de Sainte-Rose",
+      "categories": "Activités : Pêche",
+      "address": "30 RN2 Rivière de l'Est 97439 Sainte-Rose",
+      "phone": "",
+      "imageUrl": "/images/default-image.jpg",
+      "activity": ""
+    },
+    {
+      "name": "Association Koté Volkan",
+      "categories": "Activités : Tourisme",
+      "address": "219 RN2 Les Bambous 97439 Sainte-Rose",
+      "phone": "",
+      "imageUrl": "/images/default-image.jpg",
+      "activity": ""
+    },
+    {
+      "name": "Association Magma Natation de Sainte-Rose",
+      "categories": "Activités : Sports, activités de plein air natation",
+      "address": "16 Chemin Loulou Petit-Brûlé 97439 Sainte-Rose",
+      "phone": "",
+      "imageUrl": "https://static.neopse.com/medias/p/3075/site/2e/01/d3/2e01d3709f6cf9c3f567aa42162c59ab431c8cbb.png?v=v1",
+      "activity": ""
+    },
+    {
+      "name": "Association ONZERUN",
+      "categories": "Activités : Sports, activités de plein air",
+      "address": "150 Route Nationale 2 97439 Sainte-Rose",
+      "phone": "",
+      "imageUrl": "/images/default-image.jpg",
+      "activity": ""
+    }
   ]
 }

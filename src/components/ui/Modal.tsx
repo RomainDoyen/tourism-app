@@ -23,9 +23,9 @@ export default function Modal ({ establishment, onClose }: ModalProps) {
             />
           </div>
           <div className="modal-right">
-            <div className="modal-description">{establishment.description}</div>
+            <div className="modal-description">{establishment.description || establishment.categories}</div>
             <div className="modal-address">Adresse: {establishment.address}</div>
-            <div className="modal-phone">Téléphone: {establishment.phone}</div>
+            <div className="modal-phone">Téléphone: {establishment.phone || "Pas de numéro de téléphone"}</div>
           </div>
         </div>
       </div>

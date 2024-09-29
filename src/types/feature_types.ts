@@ -7,7 +7,8 @@ export type ModalProps = {
   establishment: {
     name: string;
     imageUrl: string;
-    description: string;
+    description?: string;
+    categories?: string;
     address: string;
     phone: string;
   };
